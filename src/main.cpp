@@ -21,7 +21,7 @@ public:
             cfg.spi_mode = 0;
             cfg.freq_write = 40000000;  // 写入 40MHz
             cfg.freq_read  = 16000000;  // 读取 16MHz
-            cfg.spi_3wire  = true;      // 单向 MOSI，不用 MISO
+            cfg.spi_3wire  = false;     // 4线 SPI，使用独立的 DC 引脚（pin_dc）
             cfg.use_lock   = true;
             cfg.dma_channel = SPI_DMA_CH_AUTO;
             cfg.pin_sclk = 10;
